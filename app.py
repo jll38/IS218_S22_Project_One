@@ -17,8 +17,5 @@ def docker():
 @app.route("/python")
 def python():
     return render_template('python.html')
-@app.route("/flask")
-def flask():
-    return render_template('flask.html')
 if __name__ == '__main__':
     app.run()
