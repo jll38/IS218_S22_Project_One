@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block styles %}
+            <!-- Bootstrap CSS -->
+            {{ bootstrap.load_css() }}
+        {% endblock %}
+    <title>About Git</title>
+</head>
+<body style="background-color:#d7d9db">
+<div class="position-sticky">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: 0px 2px 10px black">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Julian Lechner</a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/git">Git</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/docker">Docker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/python">Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/flask">Flask</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+</div>
+<div class="container-lg" style="background-color:white">
+    <div class="row">
+            <div class="col-md-8" style="border-style: solid;border-color:red">
+              <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" class="img-thumbnail" style="max-width:50%" alt="Git logo">
+            <p>
+                <strong>Git</strong> is a free and open source version control system
+                designed to help manage projects big or small. It has become standard
+                in the industry, used by over <strong>73 million developers</strong>.
+                Github is one of the main ways to track code repositories and branches,
+                making code readily accessible to be pulled or cloned.
+            </p>
+              </div>
+            <div class="col-md-4" style="border-style: solid;border-color:red">
+              <h1>Version Control</h1>
+            </div>
+    </div>
+</div>
+</body>
+</html>
