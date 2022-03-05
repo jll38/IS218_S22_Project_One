@@ -9,3 +9,5 @@ gunicorn
 uwsgi
 Jinja2
 Werkzeug
+flask_bootstrap
+bootstrap-flask
