@@ -11,5 +11,5 @@ RUN apt-get update &&\
     /usr/local/bin/python3 -m pip install -r requirements.txt &&\
     adduser myuser
 WORKDIR /home/myuser
-COPY --chown=myuser:myuser templates .
+COPY --chown=myuser:myuser . .
 CMD gunicorn -w 4 --bind 0.0.0.0:$PORT "app:create_app()"

@@ -1,7 +1,7 @@
 version: "3.2"
 services:
   flask:
-    build: templates
+    build: .
     restart: always
     ports:
       - 80:5000
