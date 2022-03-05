@@ -7,7 +7,6 @@ ENV PATH="/home/myuser/.local/bin:${PATH}"
 RUN apt-get update &&\
     /usr/local/bin/python3 -m pip install --upgrade pip &&\
     /usr/local/bin/python3 -m pip install --upgrade setuptools &&\
-    /usr/local/bin/python3 -m pip install -r requirements.txt &&\
     adduser myuser
 WORKDIR /home/myuser
 COPY --chown=myuser:myuser templates .
