@@ -42,7 +42,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: jll38/docker_flask
+          images: jll38/IS218_S22_Project_One
+
 
       - name: Build and push
         uses: docker/build-push-action@v2
