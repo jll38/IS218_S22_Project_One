@@ -11,3 +11,4 @@ Jinja2
 Werkzeug
 flask_bootstrap
 bootstrap-flask
+python-yaml
