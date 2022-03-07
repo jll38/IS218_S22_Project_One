@@ -7,7 +7,7 @@ bootstrap = Bootstrap5(app)
 
 #loads homepage
 @app.route("/")
-def index():
+def create_app():
     return render_template('index.html')
 
 #loads Git page
