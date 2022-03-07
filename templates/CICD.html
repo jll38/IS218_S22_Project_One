@@ -5,6 +5,43 @@
     <title>CI/CD</title>
 </head>
 <body>
+{% include "Navbar.html" %}
+{% block navbar %}
+{% endblock %}
 
+<div class="container-lg" style="background-color:white">
+    <div class="row" style="padding-top:25px">
+        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+            <h1>What is CI/CD?</h1>
+            <p>
+                CI/CD Stand for Continuous Integration and Continous Deployment,
+                it bridges the gap between development operation activities and
+                teams by allowing automation in the building, testing, and deployment
+                of applications.
+            </p>
+        </div>
+        <div class="col-4">
+            <img src="./static/images/cicd.png"
+                 class="img-thumbnail" alt="CICD Figure 1"
+            style="max-height: 85%;max-width: 85%; display:block;margin:auto; border-style: none">
+        </div>
+    </div>
+    <div class="row" style="padding-top:25px">
+        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+            <h1></h1>
+            <p>
+
+            </p>
+        </div>
+        <div class="col-4">
+            <img src=""
+                 class="img-thumbnail" alt="Docker Containers Example"
+            style="max-height: 85%;max-width: 85%; display:block;margin:auto; border-style: none">
+            <p style="text-align: center"><i></i></p>
+        </div>
+    </div>
+
+
+</div>
 </body>
 </html>

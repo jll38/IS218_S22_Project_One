@@ -24,6 +24,9 @@ def docker():
 @app.route("/python")
 def python():
     return render_template('python.html')
+@app.route("/cicd")
+def cicd():
+    return render_template('CICD.html')
 
 if __name__ == '__main__':
     app.run()
