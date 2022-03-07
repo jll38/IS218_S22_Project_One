@@ -76,7 +76,71 @@
                 style="max-width: 100%;display: block;margin: auto;border:none">
             </div>
     </div>
+    <div class="row">
+            <div class="col-md-8" style="border-right-style: solid;border-right-color: #d7d9db; padding:20px;   ">
+                <h1>Project Files</h1>
+                <p>Here is an outline of this project's filesystem, along with an explanation
+                each file's purpose in this project.</p>
+                <ul style="background-color: #d7d9db;border-radius: 20px;padding:25px">
+                    <li>Project Root Folder | Root of the Project
+                        <ul>
+                            <li>.github
+                              <ul>
+                                  <li>workflows
+                                  <ul>
+                                      <li>test-build-deploy.yml | Instructions for Github to run the tests
+                                      build the containers, and deploy to Heroku</li>
+                                  </ul>
+                                  </li>
+                              </ul>
+                            </li>
+                            <li>static
+                              <ul>
+                                  <li>images | Stores images for the app
+                                  <ul>
+                                      <li>Filesystem.PNG | Image of the filesystem as shown on the right</li>
+                                      <li>me.PNG | A picture of myself used for testing</li>
+                                  </ul>
+                                  </li>
+                              </ul>
+                            </li>
+                            <li>templates | Stores HTML files
+                              <ul>
+                                  <li>docker.html | Docker Webpage</li>
+                                  <li>flask.html | Scrapped Webpage (Combined with python.html)</li>
+                                  <li>git.html | Git Webpage</li>
+                                  <li>index.html | Homepage</li>
+                                  <li>python.html | Python and Flask Webpage (Current Page)</li>
+                              </ul>
+                            </li>
+                            <li>tests | Contains testing files
+                                <ul>
+                                    <li>pytest.py | Testing file for Github</li>
+                                </ul>
+                            </li>
+                            <li>venv | Library Root Dir</li>
+                            <li>.dockerignore | Tells docker what to ignore</li>
+                            <li>.gitignore | Tells Git what to ignore
+                            <li>app.py | Initializes app and renders HTML pages</li>
+                            <li>docker-compose.yml | Orchestration file that contains
+                            the confirguration of the project.</li>
+                            <li>Dockerfile | File used to create an image to run
+                            inside a container that runs the program</li>
+                            <li>Heroku.yml | Configures Heroku deployment</li>
+                            <li>requirements.txt | list of requirements that Python installs</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4" style="padding:20px;">
+                <img src="./static/images/Filesystem.PNG" class="img-thumbnail" alt="filesystem">
+            </div>
+    </div>
 </div>
+</div>
+
+
 
 </body>
 </html>
