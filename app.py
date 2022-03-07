@@ -13,7 +13,7 @@ app.context_processor(utility_text_processors)
 #loads homepage
 @app.route("/")
 def create_app():
-    return render_template('index.html')
+    return render_template("index.html")
 
 #loads Git page
 @app.route("/git")
