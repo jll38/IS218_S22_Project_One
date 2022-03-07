@@ -1,5 +1,5 @@
 build:
   docker:
-    web: gunicorn index:server
+    web: Dockerfile
 release:
   image: web
