@@ -71,6 +71,37 @@
             <p style="text-align: center"><i>Virtual Machines vs. Containers</i></p>
         </div>
     </div>
+
+    <div class="row" style="padding-top:25px">
+        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+            <h1>Docker Commands</h1>
+            <p>
+                Docker utilizes the commandline for most, if not, all of it's functionalities,
+            more specifically it is designed around the Linux commandline.
+            However, it is possible to run these commands in Windows utilizing
+            WSL and Powershell.
+            </p>
+            <p style="background-color: #d7d9db;border-radius: 25px;padding:20px">
+                <samp>docker -version</samp> | Returns the currently installed version of docker<br>
+                <samp>docker pull (image name)</samp> | Used to pull images from the Docker Repository/Docker Hub<br>
+                <samp>docker run -it -d (image name)</samp> | Creates a container from an image<br>
+                <samp>docker ps</samp> | Returns a list of all running containers <br>
+                <samp>docker exec -it (container id)</samp> | Accesses the running container<br>
+                <samp>docker kill (container id)</samp> | Kills the container immediately<br>
+                <samp>docker commit (container id) (username/imagename)</samp> | Creates new image of an edited container<br>
+                Ex:<br>
+                <span style ="padding-left:20px">"<samp>docker commit 23f78beaa2f3 jll38/is218_s22_project_one:master</samp>"</span><br>
+                <smap>docker push (username/imagename)</smap> | Pushes an image to the Docker Hub Repository<br>
+                <samp>docker images</samp> | Lists all locally stored docker images <br>
+                <samp>docker rm (container id)</samp> | Deletes a stopped container.<br>
+                <samp>docker build</samp> | Builds an image from a dockerfile
+
+            </p>
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
 </div>
 </body>
 </html>
