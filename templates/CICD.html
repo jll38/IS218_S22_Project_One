@@ -14,10 +14,13 @@
         <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
             <h1>What is CI/CD?</h1>
             <p>
-                CI/CD Stand for Continuous Integration and Continous Deployment,
+                CI/CD Stand for Continuous Integration and Continuous Deployment,
                 it bridges the gap between development operation activities and
                 teams by allowing automation in the building, testing, and deployment
-                of applications.
+                of applications. Continuous Delivery/Deployment allows a developer's changed to
+                an application to be automatically bug tested and uploaded to a repository,
+                where they then can be deployed to a live production environment such as
+                Heroku.
             </p>
         </div>
         <div class="col-4">
@@ -28,15 +31,25 @@
     </div>
     <div class="row" style="padding-top:25px">
         <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
-            <h1></h1>
+            <h1>Github CI/CD</h1>
             <p>
-
+                When commits are pushed onto Github, CI/CD allows further instruction with that to
+                do with that code once it reaches the repository. Testing is a very important workflow
+                aspect of this process, as it allows GitHub to run instructions (typically a .yml file)
+                given by the developer to ensure that the code still runs following changes in a commit.
+                Deployment is also done through this same process. Of course, services like Heroku
+                require login details in order to deploy, but how do we allow Github to login for us
+                without having our details out in the open in the source code? GitHub as a feature
+                called <strong>action secrets</strong>, these are stored in Github's side and in their
+                place within the yml files are variables representing the action secrets. For Docker Hub's
+                case, this is a username and password, but in Heroku's case, we need to use an Authorization
+                Token.
             </p>
         </div>
         <div class="col-4">
-            <img src=""
-                 class="img-thumbnail" alt="Docker Containers Example"
-            style="max-height: 85%;max-width: 85%; display:block;margin:auto; border-style: none">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Heroku_logo.svg/2560px-Heroku_logo.svg.png"
+                 class="img-thumbnail" alt="Heroku Logo"
+            style="max-height: 85%;max-width: 85%; display:block;margin:auto; border-style: none;margin-top:25%">
             <p style="text-align: center"><i></i></p>
         </div>
     </div>
