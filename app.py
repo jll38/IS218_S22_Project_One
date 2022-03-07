@@ -1,7 +1,7 @@
 from flask_bootstrap import Bootstrap5
 from flask import Flask, render_template
-from app.context_processors import utility_text_processors
-from app.simple_pages import simple_pages
+from context_processors import utility_text_processors
+from simple_pages import simple_pages
 
 app = Flask(__name__)
 
