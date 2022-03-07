@@ -10,13 +10,12 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 app.register_blueprint(simple_pages)
 app.context_processor(utility_text_processors)
 
-with app.app_context(), app.test_request_context():
-    template = render_template('index.html')
 
 #loads homepage
 @app.route("/")
 def create_app():
-    return render_template('index.html')
+    with app.app_context(), app.test_request_context():
+        return render_template('index.html')
 
 #loads Git page
 @app.route("/git")
