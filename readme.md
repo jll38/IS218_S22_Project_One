@@ -10,4 +10,9 @@
 Heroku App Does not want to run. Deployment works but when it
 comes to running the app itself every error fixed creates another.
 
-![Heroku Logs](https://files.slack.com/files-pri/T28EF5C02-F035UEUH430/image.png)
+![Heroku Logs](https://i.imgur.com/viGvuWX.png)
+Most of the issues from my project stem from misinterpreting the 
+instructions and starting it from scratch, rather than cloning docker_flask
+and running from there. When I realized what I did wrong
+I was much too far into the project with the deadline coming up
+to redo it entirely. 
