@@ -13,33 +13,28 @@ def test_request_main_menu_links(client):
 
 def test_request_git(client):
     """This makes the index page"""
-    response = client.get("/git")
+    response = client.get("/")
     assert response.status_code == 200
-    assert b"About Git" in response.data
+    assert b"Home" in response.data
 
 def test_request_page1(client):
+    """This makes the index page"""
+    response = client.get("/git")
+    assert response.status_code == 200
+    assert b"Git" in response.data
+
+def test_request_page2(client):
     """This makes the index page"""
     response = client.get("/docker")
     assert response.status_code == 200
     assert b"Docker" in response.data
 
-def test_request_page2(client):
-    """This makes the index page"""
-    response = client.get("/python")
-    assert response.status_code == 200
-    assert b"Python & Flask" in response.data
-
 def test_request_page3(client):
     """This makes the index page"""
     response = client.get("/cicd")
     assert response.status_code == 200
-    assert b"Page 3" in response.data
-
-def test_request_page4(client):
-    """This makes the index page"""
-    response = client.get("/page4")
-    assert response.status_code == 200
     assert b"CI/CD" in response.data
+
 
 def test_request_page_not_found(client):
     """This makes the index page"""
