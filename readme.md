@@ -1,9 +1,9 @@
-[![Production Workflow](https://github.com/jll38/IS218_S22_Project_One/actions/workflows/prod.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/jll38/IS218_S22_Project_One/actions/workflows/prod.yml/badge.svg)](https://github.com/jll38/IS218_S22_Project_One/actions/workflows/prod.yml)
 
 * [Production Deployment](https://project-one-jll38.herokuapp.com/)
 
 
-[![Development Workflow](https://github.com/jll38/IS218_S22_Project_One/actions/workflows/dev.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/jll38/IS218_S22_Project_One/actions/workflows/dev.yml/badge.svg)](https://github.com/jll38/IS218_S22_Project_One/actions/workflows/dev.yml)
 
 * [Developmental Deployment](https://project-one-jll38-dev.herokuapp.com/)
 
