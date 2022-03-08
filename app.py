@@ -1,6 +1,6 @@
 #Julian Lechner IS218
-from flask_bootstrap import Bootstrap5
 from flask import Flask, render_template
+from flask_bootstrap import Bootstrap5
 from context_processors import utility_text_processors
 
 app = Flask(__name__)
