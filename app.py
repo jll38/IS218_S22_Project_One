@@ -12,7 +12,7 @@ app.register_blueprint(simple_pages)
 app.context_processor(utility_text_processors)
 
 
-#loads homepage
+#loads homepage test
 @app.route("/")
 def create_app():
     with app.app_context(), app.test_request_context():
