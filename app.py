@@ -5,6 +5,7 @@ from context_processors import utility_text_processors
 from simple_pages import simple_pages
 
 app = Flask(__name__)
+server=app.server
 
 bootstrap = Bootstrap5(app)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
