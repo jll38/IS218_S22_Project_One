@@ -9,7 +9,6 @@ bootstrap = Bootstrap5(app)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 app.context_processor(utility_text_processors)
 
-
 #loads homepage test
 @app.route("/")
 def create_app():
