@@ -7,7 +7,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.8.12 Docker Compose (flask at [C:\Users\julia\OneDrive\Desktop\docker-nginx-flask\docker-nginx-flask\docker-compose.yml])" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
